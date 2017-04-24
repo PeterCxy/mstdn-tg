@@ -1,0 +1,30 @@
+{
+  "name": "mstdn-tg",
+  "version": "1.0.0",
+  "description": "A Mastodon-Telegram Channel Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node_modules/.bin/coffee -o mid -c src && node_modules/.bin/babel --presets env -d lib mid",
+    "authorize": "node lib/authorize.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterCxy/mstdn-tg.git"
+  },
+  "author": "PeterCxy",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/PeterCxy/mstdn-tg/issues"
+  },
+  "homepage": "https://github.com/PeterCxy/mstdn-tg#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0",
+    "coffeescript": "^2.0.0-beta1"
+  },
+  "dependencies": {
+    "mastodon-api": "^1.2.0",
+    "telegram-api": "^0.7.9"
+  }
+}

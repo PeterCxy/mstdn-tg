@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node_modules/.bin/coffee -o mid -c src && node_modules/.bin/babel --presets env -d lib mid",
-    "authorize": "node lib/authorize.js"
+    "authorize": "node lib/authorize.js",
+    "start": "node lib/main.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,8 @@
   },
   "dependencies": {
     "mastodon-api": "^1.2.0",
-    "telegram-api": "^0.7.9"
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0",
+    "striptags": "^3.0.1"
   }
 }

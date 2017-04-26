@@ -12,7 +12,7 @@ sendMessage = (text) ->
       chat_id: config.tgChannel
       text: text
       parse_mode: 'HTML'
-      disable_web_page_preview: yes
+      disable_web_page_preview: no
     json: yes
   rp options
     .then (res) =>

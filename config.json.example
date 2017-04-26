@@ -1,5 +1,5 @@
 {
-  "instance": "mastodon.social",
+  "instance": "https://mastodon.social",
   "name": "Test_Forwarder",
   "tgBot": "bot_token",
   "tgChannel": "@MyChannel"

@@ -25,7 +25,7 @@ export onUpdate = (toot) ->
   if toot.reblog?
     msg += " (Reblog)"
   msg = striptags msg, ['a', 'b', 'strong', 'em', 'code', 'pre']
-  msg = msg.replace /\&apos\;/g, '&quot;'
+  msg = msg.replace /\&apos\;/g, '\''
   sendMessage msg
     .then =>
       console.log "#{toot.id} => #{config.tgChannel}"
